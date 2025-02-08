@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ========================
+🎨 ESTILOS GENERALES
+======================== */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+/* place-items: center; */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background: linear-gradient(135deg, #1e3c72, #2a5298); /* Azul oscuro degradado */
+  color: #F8F9FA;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+/* Contenedor principal */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.container h1, .container h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/*====================
+    Table
+=====================*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #007bff;
+  color: white;
+  font-weight: 600;
+}
+
+td {
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+tr:hover td {
+  background: rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease-in-out;
+}
+
+/*====================
+    Botones
+=====================*/
+.btn {
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 25px;
+}
+
+.btn-important {
+  background: linear-gradient(135deg, #1a73e8, #0c47a1);
+  color: white;
+}
+
+.btn-important:hover {
+  box-shadow: 0 4px 12px rgba(26, 115, 232, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-red {
+  background: linear-gradient(135deg, #d32f2f, #9a0007);
+  color: white;
+}
+
+.btn-red:hover {
+  box-shadow: 0 4px 12px rgba(211, 47, 47, 0.4);
+  transform: translateY(-2px);
+}
+
+/*====================
+    Formularios
+=====================*/
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
+}
